@@ -1,0 +1,200 @@
+{
+  "processing_timestamp": "2026-08-24T14:34:36.399007",
+  "configuration": {
+    "model": "gpt-4o",
+    "confidence_threshold": 75.0,
+    "use_mock_ai": true,
+    "total_processed": 12
+  },
+  "results": [
+    {
+      "filename": "invoice_01.pdf",
+      "invoice_number": "YM-2026-0107",
+      "status": "SUCCESS",
+      "timestamp": "2026-08-24T14:34:35.702864",
+      "processing_time": 0.320094,
+      "payload": {
+        "partner_name": "株式会社山田製作所",
+        "invoice_number": "YM-2026-0107",
+        "issue_date": "2026-01-07",
+        "due_date": "2026-02-28",
+        "currency": "JPY",
+        "lines": [
+          {
+            "description": "精密部品A-100",
+            "quantity": 120,
+            "unit": "個",
+            "unit_price": 1250,
+            "amount": 150000,
+            "tax_code": "T10"
+          },
+          {
+            "description": "精密部品B-220",
+            "quantity": 40,
+            "unit": "個",
+            "unit_price": 3400,
+            "amount": 136000,
+            "tax_code": "T10"
+          },
+          {
+            "description": "梱包・輸送費",
+            "quantity": null,
+            "unit": "式",
+            "unit_price": null,
+            "amount": 18000,
+            "tax_code": "T10"
+          }
+        ],
+        "subtotal": 304000,
+        "tax_amount": 30400,
+        "total_amount": 334400,
+        "confidence": 95,
+        "anomalies": [],
+        "partner_code": "P-1001"
+      },
+      "agent_notes": "Auto-processed successfully"
+    },
+    {
+      "filename": "invoice_02.pdf",
+      "invoice_number": "OSK-26-0112",
+      "status": "MANUAL_REVIEW",
+      "timestamp": "2026-08-24T14:34:36.022958",
+      "processing_time": 0.011387,
+      "error_message": "ANOMALIES_DETECTED: Multi-page document aggregated",
+      "agent_notes": "Anomalies: ['Multi-page document aggregated']"
+    },
+    {
+      "filename": "invoice_03.pdf",
+      "invoice_number": "TF-2026-0115",
+      "status": "SUCCESS",
+      "timestamp": "2026-08-24T14:34:36.034345",
+      "processing_time": 0.274571,
+      "payload": {
+        "partner_name": "東京フーズ株式会社",
+        "invoice_number": "TF-2026-0115",
+        "issue_date": "2026-01-15",
+        "due_date": "2026-02-15",
+        "currency": "JPY",
+        "lines": [
+          {
+            "description": "業務用コーヒー豆 1kg",
+            "quantity": 24,
+            "unit": "袋",
+            "unit_price": 2800,
+            "amount": 67200,
+            "tax_code": "T08"
+          },
+          {
+            "description": "紙コップ 100個入",
+            "quantity": 30,
+            "unit": "箱",
+            "unit_price": 1200,
+            "amount": 36000,
+            "tax_code": "T10"
+          },
+          {
+            "description": "配送手数料",
+            "quantity": null,
+            "unit": "式",
+            "unit_price": null,
+            "amount": 3500,
+            "tax_code": "T10"
+          }
+        ],
+        "subtotal": 106700,
+        "tax_amount": 9326,
+        "total_amount": 116026,
+        "confidence": 90,
+        "anomalies": [],
+        "partner_code": "P-1003"
+      },
+      "agent_notes": "Auto-processed successfully"
+    },
+    {
+      "filename": "invoice_04.jpg",
+      "invoice_number": "MOCK-000",
+      "status": "MANUAL_REVIEW",
+      "timestamp": "2026-08-24T14:34:36.308916",
+      "processing_time": 0.007851,
+      "error_message": "ANOMALIES_DETECTED: Mock data used due to quota limit",
+      "agent_notes": "Anomalies: ['Mock data used due to quota limit']"
+    },
+    {
+      "filename": "invoice_05.jpg",
+      "invoice_number": "MOCK-000",
+      "status": "MANUAL_REVIEW",
+      "timestamp": "2026-08-24T14:34:36.316767",
+      "processing_time": 0.008237,
+      "error_message": "ANOMALIES_DETECTED: Mock data used due to quota limit",
+      "agent_notes": "Anomalies: ['Mock data used due to quota limit']"
+    },
+    {
+      "filename": "invoice_06.jpg",
+      "invoice_number": "MOCK-000",
+      "status": "MANUAL_REVIEW",
+      "timestamp": "2026-08-24T14:34:36.325004",
+      "processing_time": 0.008309,
+      "error_message": "ANOMALIES_DETECTED: Mock data used due to quota limit",
+      "agent_notes": "Anomalies: ['Mock data used due to quota limit']"
+    },
+    {
+      "filename": "invoice_07.jpg",
+      "invoice_number": "MOCK-000",
+      "status": "MANUAL_REVIEW",
+      "timestamp": "2026-08-24T14:34:36.333313",
+      "processing_time": 0.014228,
+      "error_message": "ANOMALIES_DETECTED: Mock data used due to quota limit",
+      "agent_notes": "Anomalies: ['Mock data used due to quota limit']"
+    },
+    {
+      "filename": "invoice_08.jpg",
+      "invoice_number": "MOCK-000",
+      "status": "MANUAL_REVIEW",
+      "timestamp": "2026-08-24T14:34:36.347541",
+      "processing_time": 0.002007,
+      "error_message": "ANOMALIES_DETECTED: Mock data used due to quota limit",
+      "agent_notes": "Anomalies: ['Mock data used due to quota limit']"
+    },
+    {
+      "filename": "invoice_09.pdf",
+      "invoice_number": "OSK-26-0128",
+      "status": "MANUAL_REVIEW",
+      "timestamp": "2026-08-24T14:34:36.349548",
+      "processing_time": 0.016495,
+      "error_message": "ANOMALIES_DETECTED: Scanned PDF, slight skew",
+      "agent_notes": "Anomalies: ['Scanned PDF, slight skew']"
+    },
+    {
+      "filename": "invoice_10.jpg",
+      "invoice_number": "MOCK-000",
+      "status": "MANUAL_REVIEW",
+      "timestamp": "2026-08-24T14:34:36.368051",
+      "processing_time": 0.006086,
+      "error_message": "ANOMALIES_DETECTED: Mock data used due to quota limit",
+      "agent_notes": "Anomalies: ['Mock data used due to quota limit']"
+    },
+    {
+      "filename": "invoice_11.jpg",
+      "invoice_number": "MOCK-000",
+      "status": "MANUAL_REVIEW",
+      "timestamp": "2026-08-24T14:34:36.374137",
+      "processing_time": 0.01172,
+      "error_message": "ANOMALIES_DETECTED: Mock data used due to quota limit",
+      "agent_notes": "Anomalies: ['Mock data used due to quota limit']"
+    },
+    {
+      "filename": "invoice_12.jpg",
+      "invoice_number": "MOCK-000",
+      "status": "MANUAL_REVIEW",
+      "timestamp": "2026-08-24T14:34:36.385857",
+      "processing_time": 0.009093,
+      "error_message": "ANOMALIES_DETECTED: Mock data used due to quota limit",
+      "agent_notes": "Anomalies: ['Mock data used due to quota limit']"
+    }
+  ],
+  "summary": {
+    "success": 2,
+    "manual_review": 10,
+    "failed": 0
+  }
+}
