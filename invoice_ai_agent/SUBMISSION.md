@@ -83,9 +83,3 @@ On multi-page invoices (e.g., `invoice_02.pdf`), initial tests showed the LLM wo
 - **Processing time per invoice:** ~3-5 seconds (dominated by LLM API latency).
 - **Where this breaks first:** Highly degraded scanned images (e.g., heavily stamped, skewed, or faxed documents) where the LLM cannot read the text. Also, entirely new suppliers not in the master list.
 - **How you would find out if something was registered incorrectly:** The system outputs structured logs and a `processing_report.json`. In production, I would add a Prometheus metric tracking the `MANUAL_REVIEW` rate. If it spikes above 10%, it triggers an alert to investigate prompt degradation or new invoice layouts.
-
-## 8. What you would do with another 8 hours
-
-1. **Build a Human-in-the-Loop Review UI (Streamlit/React):** Create a simple dashboard where accounting staff can view the original invoice image side-by-side with the extracted JSON, make one-click corrections, and approve the payload for API submission.
-2. **Implement a RAG Feedback Loop:** Store corrected invoices in a vector database. When a new invoice from the same supplier arrives, retrieve the previously corrected version as a few-shot example to dynamically improve LLM accuracy over time.
-3. **Add Async Task Queue (Celery/Redis):** Decouple the ingestion from processing to handle month-end spikes concurrently without blocking, ensuring enterprise-grade reliability.
